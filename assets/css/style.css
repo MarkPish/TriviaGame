@@ -1,10 +1,7 @@
 
 body {
     background: url("../images/italy.jpg") no-repeat center center fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background-size: cover;
 }
 header {
     text-align: center;
@@ -19,12 +16,11 @@ header {
 #wrapper {
     background-color: rgba(200, 200, 200, 0.5);
     width: 40%;
+    font-size: 18px;
     text-align: center;
-    justify-content: left;
     margin-left: 450px;
-    margin-top: 20px;
     padding-bottom: 10px;
-    border: white 2px solid;
+    border: white 3px solid;
     font-family: sans-serif;
-    padding-left: 30px;
+    padding-left: 10px;
 }

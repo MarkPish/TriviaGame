@@ -30,12 +30,12 @@ var questions = [{
     correctAnswer: 2
     //slide6.jpg
 }, {
-    question: "Gelato, an Italian ice cream, boasts this many locations selling it in Italy?",
+    question: "Gelato, an Italian ice cream, boasts this many gelaterias (stores) selling it in Italy?",
     choices: ["6,000", "19,000", "26,000", "32,000", "39,000"],
     correctAnswer: 4
     //slide7.jpg 
 }, {
-    question: "Which of the following grapes is NOT grown in Italy?",
+    question: "Which of the following wine grapes is NOT grown in Italy?",
     choices: ["Barbera", "Sangiovese", "Chianti", "Bordeaux", "Merlot"],
     correctAnswer: 3
     //slide8.jpg
@@ -218,8 +218,13 @@ function timeUp() {
                  numCorrect++;
              }
          }
-
+     // add code here to add a sound for a perfect score!
          score.append('You got ' + numCorrect + ' out of ' + questions.length + ' questions correct!!!');
          return score;
 
      };
+
+     // TO DO : create a slideshow that corresponds with the questions and
+     // either show up in the main container or centered below and inline with it.
+     // NOTE: slides are commented out and located under each correct answer in arrays above.
+     // also....change current timer to reflect 15 seconds per question.
