@@ -35,7 +35,7 @@ var questions = [{
     correctAnswer: 4
     //slide7.jpg 
 }, {
-    question: "Which of the following wine grapes is NOT grown in Italy?",
+    question: "Which of the following wine grape is NOT grown in Italy?",
     choices: ["Barbera", "Sangiovese", "Chianti", "Bordeaux", "Merlot"],
     correctAnswer: 3
     //slide8.jpg
