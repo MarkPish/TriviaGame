@@ -14,13 +14,42 @@ header {
 }
 
 #wrapper {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(143, 182, 218, 0.5);
     width: 40%;
     font-size: 18px;
     text-align: center;
     margin-left: 450px;
     padding-bottom: 10px;
-    border: white 3px solid;
+    border: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white rgb(31, 175, 31) white red;
     font-family: sans-serif;
     padding-left: 10px;
 }
+#image-holder {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+/* #buttons {
+    margin: 5px 0;
+    text-align: center;
+}
+button {
+    width: 10px;
+    height: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+

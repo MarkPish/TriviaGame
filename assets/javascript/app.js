@@ -67,6 +67,34 @@ var questionCounter = 0;
 var selections = [];
 var quiz = $('#quiz');
 
+// Set up array of slideshow images
+var images = ["assets/images/slide1a.jpg", "assets/images/slide2a.jpg", "assets/images/slide3a.jpg", "assets/images/slide4a.jpg", "assets/images/slide5a.jpg", "assets/images/slide6a.jpg", "assets/images/slide7a.jpg", "assets/images/slide8a.jpg", "assets/images/slide9a.jpg", "assets/images/slide10a.jpg", "assets/images/slide11a.jpg", "assets/images/slide12a.jpg"]; 
+var showImage;
+var count = 0;
+
+$("#start").click(startSlideshow);
+$("#stop").click(stopSlideshow);
+
+function displayImage() {
+    $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
+}
+function nextImage() {
+    count++;
+    setTimeout(displayImage, 1000);
+    if (count === images.length) {
+        count = 0;
+    }
+}
+function startSlideshow() {
+    showImage = setInterval(nextImage, 3000);
+
+}
+function stopSlideshow() {
+    clearInterval(showImage);
+
+}
+displayImage();
+
 // Display first question
 displayNext();
 timer();
@@ -75,7 +103,7 @@ $('#done').hide();
 // Next button
 $('#next').on('click', function(){
     choose();
-    // if they don't pick an answer
+    // if they don't pick an answer set up alert
     if (isNaN(selections[questionCounter])) {
         alert('Please make a selection!');
     }
@@ -87,7 +115,7 @@ $('#next').on('click', function(){
 
 // sets the timer
 function timer() {
-    t = setTimeout(timeUp, 1000 * 100);
+    t = setTimeout(timeUp, 1000 * 120);
 }
 
 function stopFunction() {
@@ -103,7 +131,7 @@ function timeUp() {
     stopFunction();
     stopFunctionII();
     }
-// set up time frame and temp file?
+// set up time frame and temp file
     var seconds;
     var temp;
 
@@ -141,7 +169,7 @@ function timeUp() {
         $('#done').hide();
         $('#time').show();
         timer();
-        document.getElementById("countDown").innerHTML = 100;
+        document.getElementById("countDown").innerHTML = 120;
         countDown();
     });
 
@@ -220,11 +248,10 @@ function timeUp() {
          }
      // add code here to add a sound for a perfect score!
          score.append('You got ' + numCorrect + ' out of ' + questions.length + ' questions correct!!!');
-         return score;
-
-     };
+            return score;
+        };
 
      // TO DO : create a slideshow that corresponds with the questions and
      // either show up in the main container or centered below and inline with it.
      // NOTE: slides are commented out and located under each correct answer in arrays above.
-     // also....change current timer to reflect 15 seconds per question.
+     // also....change current timer to reflect 30 seconds per question.
