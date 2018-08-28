@@ -86,11 +86,11 @@ function nextImage() {
     }
 }
 function startSlideshow() {
-    showImage = setInterval(nextImage, 3000);
+    showImage = setInterval(nextImage, 10000);
 
 }
 function stopSlideshow() {
-    clearInterval(showImage);
+    clearInterval(showImage); //check here for problem with slideshow not reseting...eliminated buttons...need to set to questions...next.onclick
 
 }
 displayImage();
@@ -191,15 +191,15 @@ function timeUp() {
 
      function createRadios(index) {
          var radioList = $('<ul>');
-         var input = '';// creating space where the choices will go
+         var input = '';   // creating space where the choices will go
 
          for (var i = 0; i < questions[index].choices.length; i++) {
-             var item = $('<li>'); // creating each list item
+             var item = $('<li>');     // creating each list item
              input = '<input type="radio" name="answer" value=' + i + ' />';
-             input += questions[index].choices[i]; //input is equal to input plus
+             input += questions[index].choices[i];     //input is equal to input plus
              questions[index].choices[i]
-             item.append(input);  //adding the list to the space you created
-             radioList.append(item);  //adding it to the radio list
+             item.append(input);    //adding the list to the space you created
+             radioList.append(item);     //adding it to the radio list
          }
          return radioList;
      }
@@ -209,7 +209,7 @@ function timeUp() {
          selections[questionCounter] = +$('input[name="answer"]:checked').val();
      }
 
-     //Displays next requested element
+     //Displays next requested element.... research .attr or .prop
      function displayNext() {
          quiz.fadeOut(function() {
              $('#question').remove();
