@@ -86,7 +86,7 @@ function nextImage() {
     }
 }
 function startSlideshow() {
-    showImage = setInterval(nextImage, 5000);
+    showImage = setInterval(nextImage, 8000);
 
 }
 function stopSlideshow() {
@@ -105,7 +105,7 @@ $('#next').on('click', function(){
     choose();
     // if they don't pick an answer set up alert
     if (isNaN(selections[questionCounter])) {
-        alert('Please make a selection!');
+        alert("Please make a selection!");
     }
     else {
         questionCounter++;
