@@ -3,62 +3,62 @@ var questions = [{
     question: "The capital of Italy is ?",
     choices: ["Florence", "Milan", "Rome", "Calabria", "Palermo"],
     correctAnswer: 2
-    //slide1.jpg
+    //slide1a.jpg
 }, {
     question: "The Italian city of Portofino is located on ?",
     choices: ["the Amalfi coast", "the Strait of Messina", "the Adriatic", "Lake Cuomo", "the Italian Riviera"],
     correctAnswer: 4
-    //slide2.jpg
+    //slide2a.jpg
 }, {
     question: "Which country, besides Vatican City, is also land-locked within Italy?",
     choices: ["Sardinia", "Capri", "Montenegro", "San Marino", "Moldova"],
     correctAnswer: 3
-    //slide3.jpg
+    //slide3a.jpg
 }, {
     question: "All of the following are rivers in Italy, except?",
     choices: ["Po", "Rubicon", "Tiber", "Arno", "Rhine"],
     correctAnswer: 4
-    //slide4.jpg
+    //slide4a.jpg
 }, {
     question: "A traditional Caprisi salad mimics the Italian flag in color, having 3 main ingredients; tomatoes, basil and this type of fresh cheese?",
     choices: ["Mozzarella", "Fontina", "Goat", "Cheddar", "Gorganzola"],
     correctAnswer: 0
-    //slide5.jpg
+    //slide5a.jpg
 }, {
     question: "Which Italian city is home to the exotic car maker, Ferrari?",
     choices: ["Naples", "Pirelli", "Maranello", "Turin", "Florence"],
     correctAnswer: 2
-    //slide6.jpg
+    //slide6a.jpg
 }, {
     question: "Gelato, an Italian ice cream, boasts this many gelaterias (stores) selling it in Italy?",
     choices: ["6,000", "19,000", "26,000", "32,000", "39,000"],
     correctAnswer: 4
-    //slide7.jpg 
+    //slide7a.jpg 
 }, {
     question: "Which of the following wine grape is NOT grown in Italy?",
     choices: ["Barbera", "Sangiovese", "Chianti", "Bordeaux", "Merlot"],
     correctAnswer: 3
-    //slide8.jpg
+    //slide8a.jpg
 }, {
     question: "In 79 A.D., Mount Vesuvius, near Naples, erupted, burying the ancient city of Pompeii under thick volcanic ash. What other city was also buried?",
     choices: ["Verona", "Herculaneum", "Aleppo", "Torino", "Rome"],
     correctAnswer: 1
-    //slide9.jpg
+    //slide9a.jpg
 }, {
     question: "As of 2015, how many scooters are registered in Italy?",
     choices: ["950,000", "1.9 million", "3.6 million", "5.1 million", "7.4 million"],
     correctAnswer: 2
-    //slide10.jpg
+    //slide10a.jpg
 }, {
     question: "Which mountain range is located in central Italy?",
     choices: ["Italian Alps", "Himalayas", "Dolomites", "Apennines", "Pyrenees"],
     correctAnswer: 3
-    //slide11.jpg
+    //slide11a.jpg
 }, {
     question: "Which Italian city is home to a new sculpture, depicting gigantic arms and hands rising from the water?",
     choices: ["Rome", "Milan", "Pisa", "Venice", "Palermo"],
     correctAnswer: 3
-    //slide12.jpg
+    //slide12a.jpg
 }
 ];
 
@@ -137,8 +137,7 @@ function timeUp() {
 
     function countDown() {
         seconds = document.getElementById('countDown').innerHTML;
-        seconds = parseInt(seconds, 10);
-
+        
         if (seconds == 1) {
             temp = document.getElementById('countDown');
             return;
