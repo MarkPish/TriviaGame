@@ -86,7 +86,7 @@ function nextImage() {
     }
 }
 function startSlideshow() {
-    showImage = setInterval(nextImage, 10000);
+    showImage = setInterval(nextImage, 5000);
 
 }
 function stopSlideshow() {
@@ -110,7 +110,7 @@ $('#next').on('click', function(){
     else {
         questionCounter++;
         displayNext();
-        
+
     }
 });
 
