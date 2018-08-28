@@ -110,6 +110,7 @@ $('#next').on('click', function(){
     else {
         questionCounter++;
         displayNext();
+        
     }
 });
 
@@ -198,7 +199,7 @@ function timeUp() {
              input = '<input type="radio" name="answer" value=' + i + ' />';
              input += questions[index].choices[i];     //input is equal to input plus
              questions[index].choices[i]
-             item.append(input);    //adding the list to the space you created
+             item.append(input);    //adding the list to the space created
              radioList.append(item);     //adding it to the radio list
          }
          return radioList;
@@ -248,6 +249,7 @@ function timeUp() {
      // add code here to add a sound for a perfect score!
          score.append('You got ' + numCorrect + ' out of ' + questions.length + ' questions correct!!!');
             return score;
+            
         };
 
      // TO DO : create a slideshow that corresponds with the questions and
