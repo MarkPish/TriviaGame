@@ -3,7 +3,7 @@ var questions = [{
     question: "The capital of Italy is ?",
     choices: ["Florence", "Milan", "Rome", "Calabria", "Palermo"],
     correctAnswer: 2
-    //slide1a.jpg
+    slide1a.jpg
 }, {
     question: "The Italian city of Portofino is located on ?",
     choices: ["the Amalfi coast", "the Strait of Messina", "the Adriatic", "Lake Cuomo", "the Italian Riviera"],
@@ -16,7 +16,7 @@ var questions = [{
     //slide3a.jpg
 }, {
     question: "All of the following are rivers in Italy, except?",
-    choices: ["Po", "Rubicon", "Tiber", "Arno", "Rhine"],
+    choices: [" the Po", "the Rubicon", "the Tiber", "the Arno", "the Rhine"],
     correctAnswer: 4
     //slide4a.jpg
 }, {
@@ -61,6 +61,10 @@ var questions = [{
     //slide12a.jpg
 }
 ];
+// var questions = questions in quiz
+// var questionCounter = question number
+// var selections = player's answer
+// var
 
 // Tracks question number
 var questionCounter = 0; 
@@ -72,8 +76,8 @@ var images = ["assets/images/slide1a.jpg", "assets/images/slide2a.jpg", "assets/
 var showImage;
 var count = 0;
 
-$("#start").click(startSlideshow);
-$("#stop").click(stopSlideshow);
+// $("#start").click(startSlideshow);
+// $("#stop").click(stopSlideshow);
 
 function displayImage() {
     $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
