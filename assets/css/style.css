@@ -1,6 +1,6 @@
 
 body {
-    background: url("../images/italy.jpg") no-repeat center center fixed;
+    background: url("../images/italy.jpg") center fixed;
         background-size: cover;
 }
 header {
@@ -30,18 +30,9 @@ header {
 #image-holder {
     margin: 0 auto;
     width: 400px;
-    border-color: white;
-    border-radius: 10px;
+    background-color: white;   
     text-align: center;
 }
-/* #buttons {
-    margin: 5px 0;
-    text-align: center;
-}
-button {
-    width: 10px;
-    height: 10px;
-} */
 
 
 
